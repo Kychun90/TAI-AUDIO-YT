@@ -46,6 +46,7 @@ def _resolve_ffmpeg_dir() -> Optional[str]:
 FFMPEG_DIR = _resolve_ffmpeg_dir()
 
 import yt_dlp
+print(f"[yt-dlp] Đang sử dụng phiên bản: {yt_dlp.version.__version__}")
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 from googleapiclient.errors import HttpError
